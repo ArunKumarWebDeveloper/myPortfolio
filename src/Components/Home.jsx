@@ -11,10 +11,10 @@ function Home() {
       <div className="home-overlay">
         
         <div className="handle">
-        <a href="https://github.com/ArunKumarWebDeveloper"><img id="git" src="handle (1).png"></img></a>
-        <a href="https://www.linkedin.com/in/arun-kumar-r-920841235"><img id="linked" src="handle (2).png"></img></a>
+        <a href="https://github.com/ArunKumarWebDeveloper" target="_blank"><img id="git" src="handle (1).png"></img></a>
+        <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank"><img id="linked" src="handle (2).png"></img></a>
         <div id="mail">
-        <a href="mailto:arunlokesh78@gmail.com"><img  src="handle (3).png"></img></a>
+        <a href="mailto:arunlokesh78@gmail.com" target="_blank"><img  src="handle (3).png"></img></a>
         </div>
         </div>
 
