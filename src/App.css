@@ -671,7 +671,7 @@ nav ul li a {
     text-align: center;
   }
   .profile-image {
-    max-width: 80%;
+    width: 80%;
   }
 }
 
