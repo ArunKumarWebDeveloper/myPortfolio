@@ -29,9 +29,9 @@ function Projects() {
       </div>
 
       <div className="project-card">
-        <h3>Portfolio Website </h3>
-        <img src="/landing.jpg" alt="Project 4" class="project-image" loading="lazy" />
-        <p>A personal portfolio website showcasing my skills and projects.</p>
+        <h3>Book Library</h3>
+        <img src="/landing.png" alt="Project 4" class="project-image" loading="lazy" />
+        <p>A Book Library website to search favourite Books online.</p>
        <div class="project-buttons">
       <a href="https://your-live-site.com" target="_blank" class="site-link">View Site</a>
       <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
