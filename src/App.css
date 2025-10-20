@@ -54,7 +54,6 @@ a:hover {
   background-blend-mode: overlay;
   will-change: transform, opacity;
 }
-/* Default (light) */
 
 .logo-container {
   background-color: auto white;
@@ -79,7 +78,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* Navbar */
+
 /* Navbar Container */
 .nav1{
   display: flex;
@@ -121,7 +120,7 @@ a:hover {
 }
 
 
-/* Base state */
+
 nav ul li a {
   font-weight: 600;
   color: #006eff;
@@ -129,13 +128,11 @@ nav ul li a {
   padding: 5px 5px;        /* ✅ Always present */
   text-decoration: none;
   display: inline-block; 
-  border-radius: 10px;   /* ✅ Prevents text shifting */
+  border-radius: 10px; 
 }
 
 
-
-
-/* Light mode hover */
+/* hover */
 nav ul li a:hover {
   color: white;
   text-decoration: none;
@@ -343,7 +340,7 @@ box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
 #home {
   margin-top: 0px;
   margin-bottom: 0;
-  min-height: 100vh; /* Ensures it fills the screen */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,9 +535,7 @@ box-shadow: 0 0 10px rgba(155, 237, 255, 0.95);
 
 /* About Section Background */
 
-
 /* Centering the "About Me" heading is already handled by `text-align: center` on the #about section */
-/* Section wrapper */
 #about {
   
   padding: 47px 10px;
@@ -556,7 +551,6 @@ box-shadow: 0 0 10px rgba(155, 237, 255, 0.95);
  
 }
 
-/* Main container: two columns on desktop, stacked on mobile */
 .about-container {
   backdrop-filter: blur(12px);
   max-width: 1050px;
@@ -590,8 +584,8 @@ box-shadow: 0 0 10px rgba(155, 237, 255, 0.95);
 /* The profile image itself */
 .profile-image {
   width: 100%;
-  max-width: 350px;      /* caps the width */
-  height: auto;          /* auto height keeps aspect ratio */
+  max-width: 350px;     
+  height: auto;          
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -606,10 +600,10 @@ box-shadow: 0 0 10px rgba(155, 237, 255, 0.95);
   font-family:Arial, Helvetica, sans-serif;
   margin-top: 40px;
   font-size: 1.1rem;
-  color:auto #000000;   /* fixed */
+  color:auto #000000;   
   line-height: 1.7;
-  word-spacing: normal;   /* makes words evenly spaced */
-  text-align: justify;    /* optional: makes it look neat */
+  word-spacing: normal;   
+  text-align: justify;   
 }
 .tp{
    font-family:Arial, Helvetica, sans-serif;
@@ -643,7 +637,7 @@ box-shadow: 0 0 10px rgba(155, 237, 255, 0.95);
   height: 40px;
   
   border-radius: 8px;
-  background: transparent; /* ensure no background from CSS */
+  background: transparent; 
   object-fit: contain;
 }
 
@@ -792,12 +786,7 @@ font-size:1.2rem;
   height: 24px;
 }
 
-@media (max-width:768px) {
-  
-}
 
-
-/* View Button */
 /* Skills Section */
 #skills {
  
@@ -900,13 +889,12 @@ font-size:1.2rem;
 #resume h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #006eff; /* Light color for the heading */
+    color: #006eff; 
     margin-bottom: 30px;
     text-align: center;
     transition: color 0.3s ease;
 }
 
-/* Updated: The container no longer has a background */
 .resume-container {
   background: white;
    display: flex;
@@ -918,25 +906,23 @@ font-size:1.2rem;
   border-radius: 20px;
 
 }
-
 .resume-card{
     flex: 1 1 400px;
     max-width: 500px;
-    padding: 40px ; /* Increased padding for more space */
+    padding: 40px ; 
     border-radius: 20px;
-    background-color:auto #ffffff; /* A slightly lighter dark for the cards */
-    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); /* A more visible shadow on dark bg */
+    background-color:auto #ffffff; 
+    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); 
     text-align: center;
     transition: all 0.3s ease;
 }
 .resume-overview {
     flex: 1 1 400px;
     max-width: 700px;
-    padding: 40px; /* Increased padding for more space */
+    padding: 40px;
     border-radius: 20px;
-    /* Updated: Background and shadow for dark mode */
-    background-color:auto #ffffff; /* A slightly lighter dark for the cards */
-    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); /* A more visible shadow on dark bg */
+    background-color:auto #ffffff; 
+    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); 
     text-align: center;
     transition: all 0.3s ease;
    
@@ -951,7 +937,7 @@ font-size:1.2rem;
 .resume-card p {
     margin-top: 20px;
     margin-bottom: 20px;
-    color:auto #b0b0b0; /* Light gray text for the card */
+    color:auto #b0b0b0; 
 }
 
 .resume-actions {
@@ -964,7 +950,7 @@ font-size:1.2rem;
 .resume-btn {
     background-color: #006eff;
     color: white;
-    padding: 12px 25px; /* Slightly more padding */
+    padding: 12px 25px; 
     margin-bottom: 20px;
     text-decoration: none;
     border-radius: 50px;
@@ -981,26 +967,25 @@ font-size:1.2rem;
 
 .resume-card:hover,
 .resume-overview:hover {
-    transform: scale(0.99); /* A subtle lift on hover */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+    transform: scale(0.99); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Resume Overview Styles */
 .resume-overview {
     text-align: left;
-    /* Other styles are handled by the shared .resume-card, .resume-overview rule */
 }
 
 .resume-overview h3 {
     text-decoration: underline;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color:auto #e0e0e0; /* Light color for the heading */
+    color:auto #e0e0e0; 
 }
 
 .resume-overview  p {
     margin-bottom: 15px;
-    color:auto #c0c0c0; /* A slightly darker light color for paragraph text */
+    color:auto #c0c0c0; 
     line-height: 1.5;
 }
 
@@ -1039,7 +1024,7 @@ font-size:1.2rem;
 
     .resume-btn {
         width: 70%;
-        margin: 0 auto; /* Center the buttons */
+        margin: 0 auto; 
         padding: 12px 0;
     }
 }
@@ -1125,9 +1110,7 @@ font-size:1.2rem;
 
 
 /* Contact Section */
-/* --- Updated Contact Section --- */
 #contact {
-    /* Use a subtle gradient for a more modern feel */
  background-color: #f5f5f5;
     padding: 80px 20px;
     text-align: center;
@@ -1152,12 +1135,11 @@ font-size:1.2rem;
 
 /* Updated Card Styling */
 .contact-info {
-    max-width: 600px; /* Slightly wider card for better spacing */
+    max-width: 600px; 
     margin: 10px auto;
     background-color: #ffffff;
+    border-radius: 15px;
     padding: 40px 20px;
-    border-radius: 25px; /* Softer rounded corners */
-    /* More pronounced, but softer shadow */
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1168,16 +1150,16 @@ font-size:1.2rem;
 .Contact {
     display: flex;
     align-items: center;
-    gap: 20px; /* Increased gap for better spacing */
+    gap: 20px; 
     justify-content: flex-start;
-    margin: 20px auto; /* Increased vertical margin */
+    margin: 20px auto; 
     padding: 10px auto;
     max-width: 90%;
     transition: transform 0.2s ease;
 }
 
 .Contact:hover {
-    transform: translateX(10px); /* Subtle shift on hover */
+    transform: translateX(10px); 
 }
 
 .contact-img {
@@ -1193,13 +1175,13 @@ font-size:1.2rem;
 }
 
 .Contact:hover .contact-img {
-    transform: scale(1.1) rotate(5deg); /* Bounce and rotate on hover */
+    transform: scale(1.1) rotate(5deg); 
      box-shadow: 0 0 6px rgba(155, 237, 255, 0.95);
 }
 
 /* Link Styling */
 .Contact a {
-    color: #131313; /* Darker, more readable text color */
+    color: #131313; 
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -1208,7 +1190,7 @@ font-size:1.2rem;
 }
 
 .Contact a:hover {
-    color: #03d2fc; /* Highlight link on hover */
+    color: #03d2fc; 
     text-decoration: underline;
 }
 
@@ -1268,7 +1250,6 @@ color: black;
 body.dark-mode #home h1,
 body.dark-mode #home p {
   color: auto #000000;
-  /* background: rgba(0, 0, 0, 0.4); */
 } 
 
 /* ABOUT */
@@ -1423,7 +1404,7 @@ body.dark-mode .btn:hover {
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background: white; /* Change to your background */
+  background: white;
 }
 
 .spinner {
