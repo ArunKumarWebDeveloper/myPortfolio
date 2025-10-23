@@ -34,7 +34,7 @@ function Projects() {
         <p>A Book Library website to search favourite Books online.</p>
        <div class="project-buttons">
       <a href="https://your-live-site.com" target="_blank" class="site-link">View Site</a>
-      <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+      <a href="https://github.com/ArunKumarWebDeveloper/Book-Library" target="_blank" class="github-link">
       <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="github-icon" />
     </a>
     </div>
