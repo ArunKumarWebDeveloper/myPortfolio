@@ -1412,13 +1412,13 @@ body.dark-mode .btn:hover {
   width: 50px;
   height: 50px;
   border: 5px solid rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #04b8ff;
+  border-top: 5px solid #007bff;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
 .load{
   padding:25px;
-  color:  #0d9be2;
+  color:  #007bff;
   font-size: 1.5rem;
 }
 
