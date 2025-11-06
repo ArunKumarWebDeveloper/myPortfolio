@@ -8,7 +8,10 @@ import Resume from './Components/Resume';
 import Certificates from './Components/Certificates';
 import Contact from './Components/Contact';
 import { useEffect } from 'react';
-import SplashCursor from './Components/Splashcursor';
+
+
+
+
 import './App.css';
 
 
@@ -20,7 +23,7 @@ function App() {
   return (
     
     <div className="main">
-      <SplashCursor />
+    
 <Loader>
       <Navbar />
       <Home />

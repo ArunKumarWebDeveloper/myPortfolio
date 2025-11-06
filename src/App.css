@@ -11,7 +11,7 @@ h1, h2, h3, p,
 nav,
 #next-button 
 .resume-card{
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2ms ease-in-out;
 }
 
 html {
@@ -1462,4 +1462,8 @@ body.dark-mode .btn:hover {
                 gap: 15px;
             }
         }
+
+
+
+
 

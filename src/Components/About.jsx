@@ -1,5 +1,6 @@
 
 
+
 function About() {
 
   const handleAnimationComplete = () => {
@@ -20,7 +21,6 @@ function About() {
 
 
 <div className="p">
-  <p>make changes</p>
 <p>I'm Arun Kumar R, a passionate web developer with a keen interest in creating dynamic and responsive web applications. I am skilled in HTML, CSS, JavaScript, and frameworks like React. I love solving problems and building real-world projects that make a difference.</p>
 </div>
 
@@ -43,6 +43,7 @@ function About() {
             </div>
           </div>
         </div>
+
     </section>
   );
 }
