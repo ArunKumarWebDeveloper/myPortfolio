@@ -837,7 +837,6 @@ font-size:1.2rem;
   height: 140px;
 }
 
-
 .skills-subtitle {
   font-size: 1.1rem;
   color:auto #100e0e;
@@ -859,7 +858,6 @@ font-size:1.2rem;
   object-fit: contain;
 }
 
-/* Responsive font sizes */
 @media (max-width: 768px) {
   #skills h2 {
     font-size: 2.5rem;
@@ -1051,7 +1049,6 @@ font-size:1.2rem;
   color:auto  #141414;
 }
 
-/* Certificate Grid */
 .certificates-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1061,7 +1058,6 @@ font-size:1.2rem;
   padding-top: 40px;
 }
 
-/* Certificate Card */
 .certificate-card {
   width: 100%;
   background-color: #ffffff;
