@@ -6,7 +6,7 @@ function Certificates() {
     <div class="certificate-card">
       <h3>Full-Stack Web Development</h3>
       <img src="/Screenshot 2025-07-23 170248.png" alt="Udemy" loading="lazy" />
-      <a class="view-button" href="https://www.udemy.com/certificate/UC-bdfb3cc2-4926-4098-879e-3a139dbcd9a5/" target="_blank">View Certificate</a>
+      <a class="view-button" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-bdfb3cc2-4926-4098-879e-3a139dbcd9a5.pdf" target="_blank">View Certificate</a>
     </div>
 <div class="certificate-card">
       <h3>Intro Front-end development</h3>
@@ -22,7 +22,7 @@ function Certificates() {
     <div class="certificate-card">
       <h3>CSS </h3>
       <img src="/CSS.png" alt="CSS Certificate" loading="lazy" />
-      <a class="view-button" href="https://storage.googleapis.com/programminghub/certificate%2F1751258805150.pdf" target="_blank">View Certificate</a>
+      <a class="view-button" href="https://storage.googleapis.com/programminghub/certificate%2F1762783034331.pdf" target="_blank">View Certificate</a>
     </div>
     <div class="certificate-card">
       <h3>JavaScript</h3>
