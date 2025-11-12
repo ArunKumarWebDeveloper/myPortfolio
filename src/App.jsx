@@ -8,12 +8,7 @@ import Resume from './Components/Resume';
 import Certificates from './Components/Certificates';
 import Contact from './Components/Contact';
 import { useEffect } from 'react';
-
-
-
-
 import './App.css';
-
 
 function App() {
   useEffect(() => {
@@ -22,8 +17,7 @@ function App() {
 
   return (
     
-    <div className="main">
-    
+    <div className="main"> 
 <Loader>
       <Navbar />
       <Home />
@@ -34,7 +28,6 @@ function App() {
       <Certificates />
       <Contact />
       </Loader>
-
     </div>
   );
 }
