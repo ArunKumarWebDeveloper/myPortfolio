@@ -1,48 +1,52 @@
-
-
+import { motion } from 'framer-motion';
 
 function About() {
 
-  const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
-};
-
   return (
     <section id="about" className="section2">
-      <h2>About</h2>
+      
+      {/* Top Section: What I Do / About Me Header */}
+      <div className="about-header-container">
+        <p className="section-pre-title">What I Do</p>
+        <h2>I enjoy creating delightful, responsive web experiences.</h2>
+      </div>
+
+      {/* Main Content: Adapted to match the three-card layout's energy */}
       <div className="about-container">
-      
-          <img
-            src="/Profile.jpg"
-            alt="Arun Kumar R"
-            className="profile-image"
-            loading="lazy"
-          />
+        
+        {/* Card 1: Adapted from Profile Image */}
+        <motion.div className="service-card"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+        >
+            <img src="/react.png" alt="React Icon" className="service-icon" />
+            <h3>Frontend Development</h3>
+            <p>Building responsive and accessible user interfaces using modern React frameworks.</p>
+        </motion.div>
 
+        {/* Card 2: Adapted from Main Description/Skills */}
+        <motion.div className="service-card"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+        >
+            <img src="/node.js (2).png" alt="NodeJS Icon" className="service-icon" />
+            <h3>Backend/API Integration</h3>
+            <p>Designing and connecting robust REST APIs and databases (Node.js/Express/PostgreSQL).</p>
+        </motion.div>
 
-<div className="p">
-<p>I'm Arun Kumar R, a passionate web developer with a keen interest in creating dynamic and responsive web applications. I am skilled in HTML, CSS, JavaScript, and frameworks like React. I love solving problems and building real-world projects that make a difference.</p>
-</div>
+        {/* Card 3: Adapted from Tools Section */}
+        <motion.div className="service-card"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+        >
+            <img src="/git.png" alt="Git Icon" className="service-icon" />
+            <h3>Code Workflow & Tools</h3>
+            <p>Leveraging Git, VS Code, and Postman for efficient, version-controlled development.</p>
+        </motion.div>
+        
+        {/* Original profile image and long P text are removed for the new design's focus */}
 
-
-               
-          <div className="tool1">
-            <p>Tools I Use for Web Development</p>
-      
-            <div className="tool-card">
-              <img src="/vs.png" alt="VS Code" />
-              
-            </div>
-            <div className="tool-card">
-              <img src="/postman.png" alt="Postman" />
-    
-            </div>
-            <div className="tool-card">
-              <img src="/github.png" alt="GitHub" />
-     
-            </div>
-          </div>
-        </div>
+      </div>
 
     </section>
   );

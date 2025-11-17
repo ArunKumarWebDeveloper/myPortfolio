@@ -2,41 +2,36 @@ import BlurText from "./BlurText";
 
 function Home() {
   const handleAnimationComplete = () => {
-    console.log('Animation completed!');
+    console.log('Text animation completed!');
   };
 
   return (
     <section id="home">
 
-      {/* Background Image */}
-      <img
-        src="/img2 (4).jpg"
-        className="home-image"
-        alt="Coding workspace"
-        loading="lazy"
-      />
+      {/* Social Handles - Positioned absolute top-left on desktop */}
+      <div className="handle">
+        <a href="https://github.com/ArunKumarWebDeveloper" target="_blank" aria-label="GitHub">
+          <img src="handle (1).png" />
+        </a>
+        <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank" aria-label="LinkedIn">
+          <img src="handle (2).png" />
+        </a>
+      </div>
 
       <div className="home-overlay">
 
-        {/* Social Handles */}
-        <div className="handle">
-          <a href="https://github.com/ArunKumarWebDeveloper" target="_blank">
-            <img id="git" src="handle (1).png" />
-          </a>
-          <a href="https://www.linkedin.com/in/arun-kumar-r-920841235" target="_blank">
-            <img id="linked" src="handle (2).png" />
-          </a>
-          <div id="mail">
-            <a href="mailto:arunlokesh78@gmail.com" target="_blank">
-              <img src="handle (3).png" />
-            </a>
-          </div>
-        </div>
-
-        {/* Main Animated Text */}
+        {/* Main Animated Text (Web Developer adaptation of Visual Designer) */}
+         <BlurText
+         className="home-subtitle"
+          text="Hello, my name's ARUN KUMAR R."
+          delay={150}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={handleAnimationComplete}
+        />
         <BlurText
           className="text-type"
-          text="ARUN KUMAR R"
+          text="I'm a Web Developer."
           delay={150}
           animateBy="words"
           direction="top"
@@ -45,25 +40,15 @@ function Home() {
 
         <BlurText
           className="text-p"
-          text="Turning ideas into clean, modern code."
+          text="Turning ideas into clean, modern code, A passionate web developer with a keen interest in creating dynamic and responsive web applications."
           delay={150}
           animateBy="words"
           direction="top"
           onAnimationComplete={handleAnimationComplete}
         />
 
-        {/* Button */}
-        <button
-          className="hire"
-          onClick={() =>
-            window.open("/White and Black Simple Resume.pdf", "_blank")
-          }
-        >
-          HIRE <img src="right.png" alt="Right Arrow" />
-        </button>
-
       </div>
-
+     
     </section>
   );
 }

@@ -5,8 +5,7 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Resume from './Components/Resume';
-import Certificates from './Components/Certificates';
-import Contact from './Components/Contact';
+import Certificates from './Components/Certificates'
 import { useEffect } from 'react';
 import './App.css';
 
@@ -16,8 +15,7 @@ function App() {
 }, []);
 
   return (
-    
-    <div className="main"> 
+    <div className="portfolio-viewport"> 
 <Loader>
       <Navbar />
       <Home />
@@ -26,7 +24,6 @@ function App() {
       <Skills />
       <Resume />
       <Certificates />
-      <Contact />
       </Loader>
     </div>
   );
