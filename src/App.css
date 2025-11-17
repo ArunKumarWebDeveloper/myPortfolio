@@ -622,6 +622,7 @@ font-size:1.5rem;
   margin: auto ;
   padding: 10px 20px;
   border-radius: 20px;
+  box-shadow: 0 0 10px rgba(182, 213, 255, 0.738);
 
 }
 .resume-card{

@@ -9,7 +9,6 @@ function Resume() {
       <div class="resume-content">
         <p>Download or view my resume below.</p>
         <div class="resume-actions">
-          <a href="/White and Black Simple Resume.pdf" target="_blank" class="resume-btn">View Resume</a>
           <a href="/White and Black Simple Resume.pdf" download class="resume-btn">Download Resume</a>
         </div>
       </div>
