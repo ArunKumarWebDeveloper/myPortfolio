@@ -1180,7 +1180,7 @@ body.dark-mode #contact {
   background: #ffffff;
 }
 .spinner {
-  color: rgb(14, 159, 255);
+  background-color: rgb(131, 203, 255);
   width: 50px;
   height: 50px;
   border: 5px solid rgba(0, 0, 0, 0.1);
@@ -1189,9 +1189,10 @@ body.dark-mode #contact {
   animation: spin 1s linear infinite;
 }
 .load {
+  color: #006eff;
   padding: 25px;
   color: var(--primary-color);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 @keyframes spin {
   to {
