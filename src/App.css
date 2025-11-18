@@ -1045,7 +1045,7 @@ body.dark-mode #contact {
 /* --- MOBILE RESPONSIVENESS (992px breakpoint) --- */
 /* ========================================================================= */
 
-@media (max-width: 992px) {
+@media (max-width:768px) {
   .portfolio-viewport {
     margin: 0;
     border-radius: 0;
@@ -1141,15 +1141,31 @@ body.dark-mode #contact {
   h2 {
     font-size: 2.2rem;
   }
-  .handle {
-    left: 5vw;
+  .home-overlay{
+    right: 0;
+    left: 7%;
+    width: 100%;
+    padding: 10px 5vw;
+    margin: 0 auto; 
+
   }
-  
+
+  .home-subtitle {
+    font-size: 1.5rem; /* Reduced font size */
+  }
+
   .text-type {
-    font-size: 3rem;
+    font-size: 3.5rem; /* Significantly reduced font size */
+    line-height: 1.2;
   }
+
   .text-p {
-    font-size: 1.1rem;
+    position: relative;
+    width: 100%;   /* Helps center the block */
+    margin: auto;
+    right: 4%; /* Helps center the block */
+    font-size: 1.2rem;    /* Reduced font size */
+    margin-bottom: 30px;
   }
 
   .about-container {
@@ -1202,6 +1218,31 @@ body.dark-mode #contact {
 }
 
 
+@media (max-width:1200px ) {
+ .home-overlay{
+    right: 0;
+    left: 7%;
+    width: 100%;
+    padding: 10px 5vw;
+    margin: 0 auto; 
 
+  }
 
+  .home-subtitle {
+    font-size: 1.5rem; /* Reduced font size */
+  }
 
+  .text-type {
+    font-size: 3.5rem; /* Significantly reduced font size */
+    line-height: 1.2;
+  }
+
+  .text-p {
+    /* CRITICAL FIX: Use 'auto' or '100%' width to allow wrapping */
+    width: 90%; 
+    margin-right: auto; /* Helps center the block */
+    font-size: 1.2rem;    /* Reduced font size */
+    margin-bottom: 30px;
+  }
+  
+}
