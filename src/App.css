@@ -62,7 +62,7 @@ section {
 }
 
 #home {
-  background:url("1img.jpg");
+  background:url("../public/1img.jpg");
   min-height: 100vh;
   display: flex;
   align-items: center;
