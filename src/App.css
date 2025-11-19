@@ -63,7 +63,7 @@ section {
 
 #home {
   background:url("../public/1img.jpg");
-  min-height: 100vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1225,6 +1225,14 @@ body.dark-mode #contact {
 
 
 @media (max-width:1200px ) {
+
+#home{
+ max-height: 95vh;
+  background-size: cover;
+  background-position: center;
+   
+}
+
  .home-overlay{
     right: 0;
     left: 7%;
