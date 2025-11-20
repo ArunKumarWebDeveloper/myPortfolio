@@ -1,30 +1,61 @@
+import React from 'react';
+// Make sure to import your CSS file here if needed
+
 function Resume() {
   return (
-<section id="resume" class="section5">
-  <h2>Resume</h2>
-  <div class="resume-container">
-   
-    <div class="resume-card">
-      <img src="/resume (2).png" alt="Resume Preview" id="resume-image" />
-      <div class="resume-content">
-        <p>Get Resume.</p>
-        <div class="resume-actions">
-          <a href="/White and Black Simple Resume.pdf" download class="resume-btn">Download Resume</a>
+    <section id="resume" className="section5">
+      <h2>Resume</h2>
+      
+      <div className="resume-container">
+        
+        {/* Left Side / Top Card on Mobile */}
+        <div className="resume-card">
+          <img src="/resume (2).png" alt="Resume Preview" id="resume-image" />
+          <div className="resume-content">
+            <p>Hire Me.</p>
+            <div className="resume-actions">
+              <a href="/White and Black Simple Resume.pdf" download className="resume-btn">
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Side / Bottom Card on Mobile */}
+        <div className="resume-overview">
+          <h3>Overview</h3>
+          
+          <div className="overview-item">
+            <span className="overview-label">Projects</span>
+            <p className="overview-text">
+              Built 5+ responsive apps including a Personal Portfolio, Task Manager, and a Blog with PostgreSQL backend. Focus on clean UI/UX.
+            </p>
+          </div>
+
+          <div className="overview-item">
+            <span className="overview-label">Tech Stack</span>
+            <p className="overview-text">
+              JavaScript (ES6+), React.js, HTML5, CSS3, PostgreSQL, REST APIs, Git & Responsive Design.
+            </p>
+          </div>
+
+          <div className="overview-item">
+            <span className="overview-label">Soft Skills</span>
+            <p className="overview-text">
+              Fast learner, deadline-oriented problem solver, and effective team player.
+            </p>
+          </div>
+
+          <div className="overview-item">
+            <span className="overview-label">Freelance</span>
+            <p className="overview-text">
+              Open for commissions. Building responsive websites and web apps using the React ecosystem.
+            </p>
+          </div>
+
         </div>
       </div>
-    </div>
-
-    <div class="resume-overview">
-      <h3>Overview</h3>
-      <p><strong>Projects:</strong> Built 5+ responsive websites using React, HTML/CSS, and JavaScript, including a personal portfolio, to-do app, and blog site with PostgreSQL backend.</p>
-      <p><strong>Skills:</strong> JavaScript (ES6+), React.js, HTML5, CSS3, Git, PostgreSQL, REST APIs, Responsive Design, Web Accessibility.</p>
-      <p><strong>Soft Skills:</strong> Fast learner, problem-solver, team player, deadline-oriented.</p>
-    <p><strong>Freelancing:</strong> Currently open to freelance opportunities. Available to build responsive websites, personal portfolios, and web applications using React, JavaScript, HTML/CSS, and PostgreSQL.</p>
-      
-    </div>
-  </div>
-</section>
-
+    </section>
   );
 }
 
