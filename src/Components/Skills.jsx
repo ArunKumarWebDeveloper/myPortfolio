@@ -2,9 +2,7 @@ function Skills() {
   return (
  <section id="skills" class="section4">
     <h2>Skills</h2>
-    <p class="skills-subtitle">
-    Learned Skills for Building Dynamic Web Applications.
-  </p>
+
     <div class="skills-container">
       <div class="skill">
         <img src="/HTML (2).png" alt="HTML" loading="lazy" />

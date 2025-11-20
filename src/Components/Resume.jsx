@@ -5,9 +5,9 @@ function Resume() {
   <div class="resume-container">
    
     <div class="resume-card">
-      <img src="/resume.jpg" alt="Resume Preview" class="resume-image" />
+      <img src="/resume (2).png" alt="Resume Preview" id="resume-image" />
       <div class="resume-content">
-        <p>Download or view my resume below.</p>
+        <p>Get Resume.</p>
         <div class="resume-actions">
           <a href="/White and Black Simple Resume.pdf" download class="resume-btn">Download Resume</a>
         </div>
