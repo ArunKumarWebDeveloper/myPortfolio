@@ -10,7 +10,7 @@ function Resume() {
         
         {/* Left Side / Top Card on Mobile */}
         <div className="resume-card">
-          <img src="/resume (2).png" alt="Resume Preview" id="resume-image" />
+          <img src="/resume (2).jpg" alt="Resume Preview" id="resume-image" />
           <div className="resume-content">
             <p>Hire Me.</p>
             <div className="resume-actions">

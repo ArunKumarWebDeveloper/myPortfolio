@@ -524,8 +524,8 @@ cd
 /* --- The "Sophie Bennett" Style Card --- */
 .resume-card {
   position: relative; /* Essential for overlaying content */
-  flex: 0 0 380px;    /* Fixed width to maintain card shape */
-  height: 550px;      /* Fixed height for the vertical portrait look */
+  flex: 0 0 480px;    /* Fixed width to maintain card shape */
+  height: 550px;  
   border-radius: 30px; /* Large modern radius */
   overflow: hidden;    /* Clips the image to the rounded corners */
   background-color: white;
@@ -545,7 +545,7 @@ cd
   object-fit: cover; /* Ensures image fills card without stretching */
   display: block;
   margin: 0;
-  border-radius: 0; /* Parent controls radius now */
+  border-radius: 30px; /* Parent controls radius now */
 }
 
 /* The Content Overlay (Gradient Fade) */
