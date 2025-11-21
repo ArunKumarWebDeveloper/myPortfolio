@@ -28,7 +28,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--bg-color); /* This is the "outside" color */
+  background-color: var(--bg-color); 
 }
 
 body {
@@ -62,19 +62,6 @@ section {
 }
 
 
-#home {
-  background:url("../public/1img.jpg");
-  height: 95vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Alternating Section Backgrounds */
 #about, #skills, #contact {
   background-color: var(--section-bg-alt);
   border-bottom: 1px solid rgb(255, 255, 255);
@@ -100,16 +87,6 @@ h3 {
   color: var(--text-color);
   margin-bottom: 15px;
 }
-
-.section-pre-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--secondary-color);
-  text-align: center;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
 
 /* --- NAVBAR --- */
 #custom-navbar {
@@ -213,6 +190,27 @@ h3 {
 /* --- HOME SECTION --- */
 /* ========================================================================= */
 
+#home {
+  background:url("../public/1img.jpg");
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-pre-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
 .home-overlay {
   position: relative;
   text-align: center;
@@ -241,8 +239,6 @@ h3 {
   width: 800px;
 }
 
-
-/* Social Handles */
 .handle {
   display: flex;
   flex-direction: column;
@@ -276,62 +272,6 @@ h3 {
   border: none;
   border-radius: 100%;
 }
-
-@media (max-width: 768px) {
-
-  #home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 5vw;
-  }
-
-  .home-overlay {
-    /* Reset horizontal positioning to center it */
-    right: 0;
-    left: 7%;
-    width: 100%;
-    padding: 10px 5vw;
-    margin: 0 auto; 
-
-  }
-
-  .home-subtitle {
-    font-size: 1.25rem; /* Reduced font size */
-  }
-
-  .text-type {
-    font-size: 2.5rem; /* Significantly reduced font size */
-    line-height: 1.2;
-  }
-
-  .text-p {
-    /* CRITICAL FIX: Use 'auto' or '100%' width to allow wrapping */
-    width: 90%; 
-    margin-left: auto;   /* Helps center the block */
-    margin-right: auto; /* Helps center the block */
-    
-    font-size: 1rem;    /* Reduced font size */
-    margin-bottom: 30px;
-  }
-  .handle {
-    /* Change from vertical bar to horizontal row */
-    position: relative; /* Removes absolute positioning */
-    flex-direction: row;
-    justify-content: center; 
-    top: auto;
-    left: auto;
-    transform: none;
-    width: 100%;
-    gap: 25px; /* Space out icons horizontally */
-    margin-top: 20px; /* Space below the .text-p */
-    padding-bottom: 20px; /* Add some space at the bottom */
-  }
-
-}
-
 
 /* ========================================================================= */
 /* --- ABOUT SECTION (3-Card Layout) --- */
@@ -413,7 +353,7 @@ font-size:1.5rem;
   padding-top: 40px;
   transition: all 0.3s ease;
 }
-cd 
+
 
 /* Skills Section */
 #skills {
@@ -476,25 +416,6 @@ cd
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
-  #skills h2 {
-    font-size: 2.5rem;
-  }
-
-  .skill {
-    padding: 20px 8px;
-  }
-
-  .skill img {
-    width: 45px;
-    height: 45px;
-  }
-
-  #skills h3 {
-    font-size: 0.95rem;
-    padding: 15px;
-  }
-}
 
 /* Resume Section */
 #resume {
@@ -514,22 +435,21 @@ cd
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start; /* Aligns tops of both columns */
+  align-items: flex-start; 
   gap: 60px;
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* --- The "Sophie Bennett" Style Card --- */
 .resume-card {
-  position: relative; /* Essential for overlaying content */
-  flex: 0 0 480px;    /* Fixed width to maintain card shape */
+  position: relative; 
+  flex: 0 0 480px;    
   height: 550px;  
-  border-radius: 30px; /* Large modern radius */
-  overflow: hidden;    /* Clips the image to the rounded corners */
+  border-radius: 30px; 
+  overflow: hidden;    
   background-color: white;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Deep soft shadow */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -538,14 +458,13 @@ cd
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* Image takes up full space behind content */
 #resume-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image fills card without stretching */
+  object-fit: cover; 
   display: block;
   margin: 0;
-  border-radius: 30px; /* Parent controls radius now */
+  border-radius: 30px; 
 }
 
 /* The Content Overlay (Gradient Fade) */
@@ -554,8 +473,7 @@ cd
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 130px 25px 30px 25px; /* Top padding creates space for gradient */
-  /* White gradient starting from bottom to make text readable */
+  padding: 130px 25px 30px 25px; 
   background: linear-gradient(to top, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
   display: flex;
   flex-direction: column;
@@ -569,11 +487,10 @@ cd
   color: #1a1a1a;
   margin: 0 0 15px 0;
   line-height: 1.2;
-  text-transform: capitalize; /* Looks cleaner */
+  text-transform: capitalize; 
   letter-spacing: -0.5px;
 }
 
-/* Button styling to match the "Follow" button */
 .resume-actions {
   width: 100%;
   display: flex;
@@ -581,7 +498,7 @@ cd
 }
 
 .resume-btn {
-  background-color: #ffffff; /* High contrast dark button */
+  background-color: #ffffff; 
   color: #000000;
   padding: 12px 30px;
   font-size: 1rem;
@@ -600,9 +517,9 @@ cd
   color: #0084ff;
 }
 
-/* --- Right Side: Overview (Kept Clean as requested) --- */
+
 .resume-overview {
-  flex: 1; /* Takes remaining width */
+  flex: 1;
   padding-top: 20px;
   text-align: left;
 }
@@ -636,45 +553,6 @@ cd
   margin: 0;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    .resume-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 10px;
-    }
-
-    .resume-card,
-    .resume-overview {
-        max-width: 100%;
-        width: 100%;
-        padding: 25px;
-    }
-
-    .resume-overview {
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .resume-overview h3 {
-        font-size: 1.5rem;
-    }
-
-    .resume-overview p {
-        font-size: 0.95rem;
-    }
-
-    .resume-actions {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .resume-btn {
-        width: 70%;
-        margin: 0 auto; 
-        padding: 12px 0;
-    }
-}
 
 /* Certificates Section */
 #certificates {
@@ -711,27 +589,27 @@ cd
   background-color: #04213d; 
 }
 .footer {
-  padding: 60px 5vw 20px 5vw; /* More padding at the top */
+  padding: 60px 5vw 20px 5vw;
   font-size: 0.95rem;
-  border-top: 1px solid #000000; /* Darker border */
+  border-top: 1px solid #000000; 
 }
 
 .footer-main-content {
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-between;
-  gap: 40px; /* Space between columns */
+  gap: 40px; 
   margin-bottom: 40px;
-  max-width: 1200px; /* Max width for large screens */
+  max-width: 1200px; 
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Individual Footer Column */
 .footer-column {
-  flex-grow: 1; /* Columns will grow */
-  flex-basis: 200px; /* Each column starts at 200px wide */
-  min-width: 180px; /* Minimum width before wrapping */
+  flex-grow: 1; 
+  flex-basis: 200px; 
+  min-width: 180px; 
 }
 .footer-column p{
   color: white;
@@ -751,11 +629,10 @@ cd
   display: block;
   width: 30px;
   height: 2px;
-  background-color: #006eff; /* Accent color */
+  background-color: #006eff; 
   margin-top: 8px;
 }
 
-/* Your name in the footer */
 .footer-logo-name {
   font-size: 1.5rem;
   font-weight: 700;
@@ -763,7 +640,7 @@ cd
 }
 
 .footer-logo-name::after {
-  display: none; /* No underline for your name */
+  display: none; 
 }
 
 .footer-tagline {
@@ -772,7 +649,6 @@ cd
   color: #ffffff;
 }
 
-/* Lists in columns (for Pages & Social) */
 .footer-column ul {
   list-style-type: none;
   padding: 0;
@@ -793,21 +669,21 @@ cd
 .footer-column ul li a:hover,
 .footer-column a:hover {
   color: #ffffff;
-  padding-left: 5px; /* Slight indent on hover */
-  text-decoration: underline; /* Add underline on hover */
+  padding-left: 5px; 
+  text-decoration: underline; 
 }
 
-/* Special style for the email link */
+
 .footer-contact-email {
   color: #ffffff;
   font-weight: 500;
-  word-break: break-all; /* Prevents long email from breaking layout */
+  word-break: break-all;
 }
 
 .footer-contact-email:hover {
-  color: #006eff; /* Accent color on hover */
+  color: #006eff;
   text-decoration: underline;
-  padding-left: 0; /* No indent for email */
+  padding-left: 0; 
 }
 
 /* Bottom Copyright Bar */
@@ -916,157 +792,13 @@ body.dark-mode .resume-overview p, body.dark-mode #certificates h3 {
   color: white;
 }
 body.dark-mode .github-link {
-  background-color:white; /* Make GitHub icon circle visible */
+  background-color:white; 
 }
 body.dark-mode #contact {
  background-color: #04213d;
 }
 
-/* ========================================================================= */
-/* --- MOBILE RESPONSIVENESS (992px breakpoint) --- */
-/* ========================================================================= */
-
-@media (max-width:768px) {
-  .portfolio-viewport {
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  /* Navbar: Hide regular links, show hamburger */
-  .nav-links {
-    display: none;
-  }
-  .nav-actions .contact-btn {
-    display: block; /* Hide contact button on mobile nav bar */
-  }
-
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 28px;
-    height: 22px;
-    cursor: pointer;
-  }
-  .hamburger-menu span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: rgb(0, 153, 255);
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-  }
-  body.dark-mode .hamburger-menu span {
-    background-color: var(--dark-text-color);
-  }
-
-  /* --- Mobile Menu Open State (Full Screen Overlay) --- */
-  .nav-links.open {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    z-index: 1005;
-    transform: translateY(0); /* Make it appear */
-  }
-  .nav-links.open li {
-    width: 80%;
-    text-align: center;
-  }
-  .nav-links.open li a {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 15px;
-    color: var(--text-color);
-  }
-  .nav-links.open li a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-
-  /* Hamburger Animation */
-  .hamburger-menu.open span:nth-child(1) {
-    transform: translateY(9.5px) rotate(45deg);
-  }
-  .hamburger-menu.open span:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger-menu.open span:nth-child(3) {
-    transform: translateY(-9.5px) rotate(-45deg);
-  }
-  
-  /* Dark Mode Mobile Menu */
-  body.dark-mode .nav-links.open {
-    background-color: var(--dark-viewport-bg);
-  }
-  body.dark-mode .nav-links.open li a {
-    color: var(--dark-text-color);
-  }
-  body.dark-mode .nav-links.open li a:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-  }
-
-  /* Section Adjustments */
-  section, #home {
-    padding: 80px 5vw;
-  }
-  h2 {
-    font-size: 2.2rem;
-  }
-  .home-overlay{
-    right: 0;
-    left: 7%;
-    width: 100%;
-    padding: 10px 5vw;
-    margin: 0 auto; 
-
-  }
-
-  .home-subtitle {
-    font-size: 1.5rem; /* Reduced font size */
-  }
-
-  .text-type {
-    font-size: 3.5rem; /* Significantly reduced font size */
-    line-height: 1.2;
-  }
-
-  .text-p {
-    position: relative;
-    width: 100%;   /* Helps center the block */
-    margin: auto;
-    right: 4%; /* Helps center the block */
-    font-size: 1.2rem;    /* Reduced font size */
-    margin-bottom: 30px;
-  }
-
-  .about-container {
-    grid-template-columns: 1fr; /* Stack cards */
-    gap: 20px;
-  }
-  .projects-container, .skills-container, .certificates-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .resume-container {
-    flex-direction: column;
-  }
-  
-  .footer {
-    border-radius: 0;
-  }
-}
-
-/* --- LOADER STYLES (Kept from original) --- */
+/* Loader Styles */
 .loader-container {
   display: flex;
   flex-direction: column;
@@ -1079,7 +811,7 @@ body.dark-mode #contact {
 
 .load {
   margin-top: 20px;
-  color: #0289ff; /* Matches the loader colors below */
+  color: #0289ff; 
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1104,6 +836,257 @@ body.dark-mode #contact {
 
 @keyframes l3 {to{transform: rotate(1turn)}}
 
+/* ========================================================================= */
+/* --- MOBILE RESPONSIVENESS (992px breakpoint) --- */
+/* ========================================================================= */
+
+@media (max-width: 768px) {
+
+  #home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 5vw;
+  }
+
+  .home-overlay {
+    right: 0;
+    left: 7%;
+    width: 100%;
+    padding: 10px 5vw;
+    margin: 0 auto; 
+
+  }
+
+  .home-subtitle {
+    font-size: 1.25rem; 
+  }
+
+  .text-type {
+    font-size: 2.5rem; 
+    line-height: 1.2;
+  }
+
+  .text-p {
+    width: 90%; 
+    margin-left: auto;  
+    margin-right: auto; 
+    font-size: 1rem;    
+    margin-bottom: 30px;
+  }
+  .handle {
+    position: relative; 
+    flex-direction: row;
+    justify-content: center; 
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    gap: 25px; 
+    margin-top: 20px; 
+    padding-bottom: 20px; 
+  }
+
+}
+
+@media (max-width:768px) {
+  .portfolio-viewport {
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+  .nav-actions .contact-btn {
+    display: block; 
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+  }
+  .hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 153, 255);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  body.dark-mode .hamburger-menu span {
+    background-color: var(--dark-text-color);
+  }
+
+  .nav-links.open {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 80%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1005;
+    transform: translateY(0); 
+  }
+  .nav-links.open li {
+    width: 50%;
+    text-align: center;
+  }
+  .nav-links.open li a {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 15px;
+    color: white;
+  }
+  .nav-links.open li a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  /* Hamburger Animation */
+  .hamburger-menu.open span:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+  }
+  .hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-menu.open span:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+  }
+  
+  /* Dark Mode Mobile Menu */
+  body.dark-mode .nav-links.open {
+    backdrop-filter: blur(10px);
+  }
+  body.dark-mode .nav-links.open li a {
+    color: var(--dark-text-color);
+  }
+  body.dark-mode .nav-links.open li a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  section, #home {
+    padding: 80px 5vw;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  .home-overlay{
+    right: 0;
+    left: 7%;
+    width: 100%;
+    padding: 10px 5vw;
+    margin: 0 auto; 
+
+  }
+
+  .home-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .text-type {
+    font-size: 3.5rem; 
+    line-height: 1.2;
+  }
+
+  .text-p {
+    position: relative;
+    width: 100%;   
+    margin: auto;
+    right: 4%;
+    font-size: 1.2rem;    
+    margin-bottom: 30px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  .projects-container, .skills-container, .certificates-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .resume-container {
+    flex-direction: column;
+  }
+  
+  .footer {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .resume-card,
+    .resume-overview {
+        max-width: 100%;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .resume-overview {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .resume-overview h3 {
+        font-size: 1.5rem;
+    }
+
+    .resume-overview p {
+        font-size: 0.95rem;
+    }
+
+    .resume-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .resume-btn {
+        width: 70%;
+        margin: 0 auto; 
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
+  #skills h2 {
+    font-size: 2.5rem;
+  }
+
+  .skill {
+    padding: 20px 8px;
+  }
+
+  .skill img {
+    width: 45px;
+    height: 45px;
+  }
+
+  #skills h3 {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+}
+
 
 @media (max-width:1200px ) {
 
@@ -1124,19 +1107,18 @@ body.dark-mode #contact {
   }
 
   .home-subtitle {
-    font-size: 1.5rem; /* Reduced font size */
+    font-size: 1.5rem; 
   }
 
   .text-type {
-    font-size: 3.5rem; /* Significantly reduced font size */
+    font-size: 3.5rem; 
     line-height: 1.2;
   }
 
   .text-p {
-    /* CRITICAL FIX: Use 'auto' or '100%' width to allow wrapping */
     width: 90%; 
-    margin-right: auto; /* Helps center the block */
-    font-size: 1.2rem;    /* Reduced font size */
+    margin-right: auto; 
+    font-size: 1.2rem;    
     margin-bottom: 30px;
   }
 
@@ -1171,7 +1153,8 @@ body.dark-mode #contact {
 }
 
 
-
+/* ========================================================================= */
+/* --- PROJECTS & CERTIFICATES CARDS CSS --- */
  .projects-container, .certificates-container {
             display: flex;
             flex-wrap: wrap;
@@ -1181,18 +1164,16 @@ body.dark-mode #contact {
             margin: 0 auto 60px auto;
         }
 
-        /* --- PROJECT CARD CSS (Updated Design) --- */
+       
         .project-card {
-            position: relative; /* Vital for absolute positioning of image */
-            width: 380px;       /* Standard card width */
-            height: 400px;      /* Fixed height ensures consistent look */
+            position: relative; 
+            width: 380px;  
+            height: 400px;      
             background-color: #ffffff;
             border-radius: 20px;
-            overflow: hidden;   /* Clips the image at corners */
+            overflow: hidden;   
             box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
             transition: all 0.4s ease;
-
-            /* Flex magic to push text to bottom */
             display: flex;
             flex-direction: column;
             justify-content: flex-end; 
@@ -1200,7 +1181,7 @@ body.dark-mode #contact {
             box-sizing: border-box;
         }
 
-        /* The Image - Now Background */
+
         .project-card .project-image {
             position: absolute;
             top: 0;
@@ -1209,11 +1190,10 @@ body.dark-mode #contact {
             height: 80%;
             object-fit: cover;
             object-position: center;
-            z-index: 0; /* Sits at the back */
+            z-index: 0; 
             transition: transform 0.5s ease;
         }
 
-        /* The White Gradient Overlay */
         .project-card::before {
             content: '';
             position: absolute;
@@ -1228,15 +1208,15 @@ body.dark-mode #contact {
                 rgba(255, 255, 255, 0) 70%,
                 rgba(255, 255, 255, 0) 100%
             );
-            z-index: 1; /* Sits on top of image, below text */
+            z-index: 1; 
         }
 
-        /* Text Content Styling */
+
         .project-card h3, 
         .project-card p, 
         .project-buttons {
             position: relative;
-            z-index: 2; /* Sits on top of everything */
+            z-index: 2; 
         }
 
         .project-card h3 {
@@ -1264,17 +1244,15 @@ body.dark-mode #contact {
             transform: scale(1.05);
         }
 
-        /* --- BUTTONS CSS (Projects & Certificates) --- */
         
         .project-buttons {
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Spreads view button and github icon */
+            justify-content: space-between; 
             gap: 10px;
             width: 100%;
         }
 
-        /* Shared Pill Style for "View Site" and "View Certificate" */
         .site-link{
             display: inline-flex;
             justify-content: center;
@@ -1285,7 +1263,7 @@ body.dark-mode #contact {
             font-weight: 600;
             font-size: 0.9rem;
             text-decoration: none;
-            border-radius: 30px; /* Pill shape */
+            border-radius: 30px; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             border: 1px solid transparent;
@@ -1302,7 +1280,7 @@ body.dark-mode #contact {
             font-weight: 600;
             font-size: 0.9rem;
             text-decoration: none;
-            border-radius: 30px; /* Pill shape */
+            border-radius: 30px; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             border: 1px solid transparent;
@@ -1312,7 +1290,7 @@ body.dark-mode #contact {
             transform: translateY(-2px);
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
             background-color: #f8f8f8;
-            color: #006eff; /* Slight accent color on hover */
+            color: #006eff; 
         }
 
         /* GitHub Icon Styling */
@@ -1360,15 +1338,15 @@ body.dark-mode #contact {
 
         .certificate-card img {
             width: 100%;
-            height: 200px; /* Fixed height for consistency */
-            object-fit: contain; /* Ensures cert isn't cut off */
+            height: 200px; 
+            object-fit: contain;
             border-radius: 10px;
-            background-color: #f9f9f9; /* Light bg for transparent PNGs */
+            background-color: #f9f9f9; 
         }
 
-        /* Make view button inside cert card stretch nicely */
+
         .certificate-card  {
-            margin-top: auto; /* Pushes button to bottom if content varies */
+            margin-top: auto; 
         }
 
 
@@ -1400,5 +1378,5 @@ body.dark-mode #contact {
                 rgba(255, 255, 255, 0) 70%,
                 rgba(255, 255, 255, 0) 100%
             );
-            z-index: 1; /* Sits on top of image, below text */
+            z-index: 1; 
         }
