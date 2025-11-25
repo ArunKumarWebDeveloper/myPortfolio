@@ -784,8 +784,15 @@ body.dark-mode .resume-container,
 body.dark-mode .resume-card,
 body.dark-mode .resume-overview {
   background-color: var(--dark-card-bg);
+  border-radius: 15px;
 }
 body.dark-mode .resume-overview h3 {
+  color: var(--dark-text-color);
+}
+body.dark-mode .resume-content p {
+  color: var(--dark-text-secondary);
+}
+body.dark-mode .overview-label {
   color: var(--dark-text-color);
 }
 body.dark-mode .resume-overview p, body.dark-mode #certificates h3 {
