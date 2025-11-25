@@ -30,7 +30,7 @@ function Projects() {
 
       <div className="project-card">
         <img src="/landing.png" alt="Project 4" class="project-image" loading="lazy" />
-        <h3>Book-Library</h3>
+        <h3>Digital-Library</h3>
         <p>A Book Library website to search favourite Books online.</p>
        <div class="project-buttons">
       <a href="#" target="_blank" class="site-link">View Site</a>
