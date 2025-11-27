@@ -130,10 +130,14 @@ h3 {
   gap: 10px;
   margin-right: auto;
   margin-left: 40px;
+   padding: 6px 14px;
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+box-shadow: 0 0 1px rgba(255, 255, 255, 1);
 }
 .nav-links li a {
   font-weight: 600;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 6px 14px;
   border-radius: 12px;
   transition: all 0.2s ease-in-out;
@@ -142,7 +146,7 @@ h3 {
 }
 .nav-links li a:hover {
   background-color: white;
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -154,18 +158,20 @@ h3 {
 
 .contact-btn {
   font-weight: 600;
-  color: rgb(0, 0, 0);
   border: 2px solid var(--primary-color);
   padding: 8px 18px;
   border-radius: 50px;
   transition: all 0.3s ease;
   font-size: 1rem;
   text-decoration: none;
-  background-color: white;
+  backdrop-filter: blur(10px);
+  color: rgb(255, 255, 255);
+ box-shadow: 0 0 1px rgba(255, 255, 255, 1);
+  
 }
 .contact-btn:hover {
-  background-color: rgb(0, 115, 255);
   color: white;
+  background-color: rgba(255, 255, 255, 0.422);
   text-decoration: none;
 }
 
@@ -212,6 +218,9 @@ h3 {
 }
 
 .home-overlay {
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 1);
   position: relative;
   text-align: center;
   padding: 10px 20px;
@@ -738,12 +747,12 @@ body.dark-mode .nav-links li a:hover {
   color: black;
 }
 body.dark-mode .contact-btn {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border-color: white;
 }
 body.dark-mode .contact-btn:hover {
-  background-color: rgb(0, 115, 255);
-  color: white;
+  backdrop-filter: blur(10px);
+  color: rgb(255, 255, 255);
 }
 
 /* Dark Sections */
@@ -939,7 +948,7 @@ body.dark-mode #contact {
     bottom: 0;
     height: 100vh;
     width: 80%;
-    backdrop-filter: blur(10px);
+    background-color: #ffffff98;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -957,7 +966,6 @@ body.dark-mode #contact {
     font-size: 1.8rem;
     font-weight: 600;
     padding: 15px;
-    background-color: white;
     color: rgb(0, 0, 0);
   }
   .nav-links.open li a:hover {
