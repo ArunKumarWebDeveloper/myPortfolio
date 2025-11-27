@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useDarkMode from '../hooks/Darkmode.js'; 
 import useMobileMenu from '../hooks/useMobileMenu.js'; 
-
 import DarkModeToast from '../Components/DarkMode.jsx';
 
 
