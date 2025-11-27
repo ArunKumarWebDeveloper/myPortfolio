@@ -363,6 +363,9 @@ font-size:1.5rem;
   transition: all 0.3s ease;
 }
 
+#mobile{
+  display: none;
+}
 
 /* Skills Section */
 #skills {
@@ -1112,17 +1115,18 @@ body.dark-mode #contact {
 @media (max-width:1200px ) {
 
 #home{
-  max-height: 45vh;
+  max-height: 65vh;
   background-size: cover;
   background-position: center;
    
 }
 
  .home-overlay{
+    top:7%;
     right: 0;
-    left: 7%;
-    width: 100%;
-    padding: 10px 5vw;
+    left: 2%;
+    width: 80vw;
+    padding: 10px;
     margin: 0 auto; 
 
   }
@@ -1160,6 +1164,14 @@ body.dark-mode #contact {
     width: 80%;
     margin: 0 auto; 
     padding: 15px;
+}
+
+.project-card p{
+  display: none;
+}
+
+#mobile{
+  display: block;
 }
 
 }
@@ -1249,9 +1261,9 @@ body.dark-mode #contact {
 
         .project-card p {
             font-size: 0.95rem;
-            color: #555;
+            color: #2c2c2c;
             margin: 0 0 20px 0;
-            line-height: 1.4;
+            line-height: 1.2;
             font-weight: 500;
         }
 
