@@ -23,7 +23,7 @@ function Home() {
         {/* Main Animated Text (Web Developer adaptation of Visual Designer) */}
          <BlurText
          className="home-subtitle"
-          text="Hello, my name's ARUN KUMAR R."
+          text="Hey, I'm Arun Kumar R"
           delay={150}
           animateBy="words"
           direction="top"
@@ -31,7 +31,7 @@ function Home() {
         />
         <BlurText
           className="text-type"
-          text="I'm a Web Developer."
+          text="Web Developer"
           delay={150}
           animateBy="words"
           direction="top"
@@ -40,7 +40,7 @@ function Home() {
 
         <BlurText
           className="text-p"
-          text="Turning ideas into clean, modern code, A passionate web developer with a keen interest in creating dynamic and responsive web applications."
+          text="Turning ideas into clean & modern code, A passionate web developer with a keen interest in creating dynamic and responsive web applications."
           delay={150}
           animateBy="words"
           direction="top"
