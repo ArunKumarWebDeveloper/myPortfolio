@@ -598,12 +598,15 @@ font-size:1.5rem;
 /*footer styles*/
 /* Main Footer Container */
 #contact {
-  background-color: #04213d; 
+  background:url("footer2 (1).jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .footer {
   padding: 60px 5vw 20px 5vw;
   font-size: 0.95rem;
-  border-top: 1px solid #000000; 
+  border-top: 1px solid #ffffff; 
 }
 
 .footer-main-content {
@@ -624,11 +627,11 @@ font-size:1.5rem;
   min-width: 180px; 
 }
 .footer-column p{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 /* Column Headings */
 .footer-column h3 {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 20px;
@@ -648,7 +651,7 @@ font-size:1.5rem;
 .footer-logo-name {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
 }
 
 .footer-logo-name::after {
@@ -658,7 +661,7 @@ font-size:1.5rem;
 .footer-tagline {
   font-style: italic;
   margin-top: 10px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .footer-column ul {
@@ -673,21 +676,21 @@ font-size:1.5rem;
 
 .footer-column ul li a,
 .footer-column a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
 .footer-column ul li a:hover,
 .footer-column a:hover {
-  color: #ffffff;
+  color: #000000;
   padding-left: 5px; 
   text-decoration: underline; 
 }
 
 
 .footer-contact-email {
-  color: #ffffff;
+  color: #000000;
   font-weight: 500;
   word-break: break-all;
 }
@@ -704,14 +707,14 @@ font-size:1.5rem;
   justify-content: space-around;
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid #ffffff;
-  color: #ffffff;
+  border-top: 2px solid #006eff;
+  color: #000000;
   font-size: 0.95rem;
 }
 
 .footer-credit a {
   font-size: 0.85rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* ========================================================================= */
