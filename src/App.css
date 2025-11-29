@@ -601,7 +601,7 @@ font-size:1.5rem;
   background:url("footer2 (1).jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-
+  
 }
 .footer {
   padding: 60px 5vw 20px 5vw;
@@ -676,10 +676,11 @@ font-size:1.5rem;
 
 .footer-column ul li a,
 .footer-column a {
-  color: #000000;
+   color: rgb(18, 126, 208);
   text-decoration: none;
   transition: color 0.3s ease, padding-left 0.3s ease;
 }
+
 
 .footer-column ul li a:hover,
 .footer-column a:hover {
@@ -703,13 +704,15 @@ font-size:1.5rem;
 
 /* Bottom Copyright Bar */
 .footer-bottom {
+   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-around;
   text-align: center;
-  padding-top: 20px;
+  padding: 20px;
   border-top: 2px solid #006eff;
   color: #000000;
   font-size: 0.95rem;
+   border-radius: 12px;
 }
 
 .footer-credit a {
@@ -1053,6 +1056,7 @@ body.dark-mode #contact {
   .footer {
     border-radius: 0;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -1177,7 +1181,24 @@ body.dark-mode #contact {
   display: block;
 }
 
+.footer-column a{
+  color: rgb(18, 126, 208);
 }
+
+.footer-column ul li a{
+  color:rgb(18, 126, 208);
+}
+
+.footer-bottom{
+  backdrop-filter: blur(10px);
+  padding:10px;
+  border-radius: 12px;
+  margin:auto;
+}
+
+}
+
+
 @media (max-width:700px ) {
   #home{
  max-height: 95vh;
