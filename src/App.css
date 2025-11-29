@@ -601,12 +601,15 @@ font-size:1.5rem;
   background:url("footer2 (1).jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  
+  border-top: 1px solid rgba(24, 24, 24, 0.693);
+   box-shadow: 0 0 20px rgba(0, 234, 255, 0.738);
 }
 .footer {
   padding: 60px 5vw 20px 5vw;
   font-size: 0.95rem;
-  border-top: 1px solid #ffffff; 
+
+ 
+
 }
 
 .footer-main-content {
@@ -825,8 +828,14 @@ body.dark-mode .resume-overview p, body.dark-mode #certificates h3 {
 body.dark-mode .github-link {
   background-color:white; 
 }
-body.dark-mode #contact {
- background-color: #04213d;
+body.dark-mode .footer-bottom p{
+color: var(--dark-bg-color);
+}
+body.dark-mode .footer-main-content h3{
+  color: black;
+}
+body.dark-mode .footer-column p{
+  color: black;
 }
 
 /* Loader Styles */
